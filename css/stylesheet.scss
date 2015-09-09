@@ -86,6 +86,17 @@ ul {
 	
 }
 
+// @mixin Style does not seem to activate 
+
+@mixin ul($width: 600px, $ulpadding: 20px) {
+        font-size: 1em;
+        width: $width;
+        padding: $ulpadding;
+        border-bottom: ridge 1.5px #FFF;
+        margin: 25px $auto 25px $auto;
+        text-align: $text-align;
+}
+
 #subnav {
 	font-size: .80em;
 	width: 100%;
