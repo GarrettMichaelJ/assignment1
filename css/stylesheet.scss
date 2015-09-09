@@ -17,6 +17,11 @@ $text-align:center;
 // Auto sets
 $auto:auto;
 
+// Standard font
+$basefont:sans-serif;
+
+$footerC:#5F73A1;
+
 #container {
 	width: $auto;
 	height: $auto;
@@ -36,6 +41,12 @@ $auto:auto;
 
 body {
 	background-color: whitesmoke;
+    
+// Nested Font Property    
+    font: {
+                family:$basefont;
+                size: 1em;
+        }
 }
 
 #logo {
@@ -57,7 +68,6 @@ body {
 	padding-bottom: 20px;
 	background-color: #456E99;
 	color: $color;
-
 }
 
 #navigation {
@@ -88,6 +98,8 @@ ul {
 	padding-top: 15px;
 	padding-bottom: 15px;	
 }
+
+
 
 li {
 	display: inline;
@@ -126,7 +138,7 @@ h2 {
 	padding-bottom:25px;
 	font-size: .80em; /*12/15*/
 	text-align: $text-align;
-	background-color: #5F73A1;
+	background-color: $footerC;
 	color: $color;
 	clear: both;
 	border-bottom-left-radius: $radius;
